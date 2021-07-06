@@ -26,3 +26,7 @@ COPY packages/backend/dist/bundle.tar.gz app-config.yaml ./
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz
 
 CMD ["node", "packages/backend", "--config", "app-config.yaml"]
+
+# cookiecutter
+RUN apt-get update && apt-get install -y python3 python3-pip
+RUN pip3 install cookiecutter
