@@ -4,8 +4,8 @@ metadata:
   name: backstage
   description: An example of a Backstage application.
   # Example for optional annotations
-  # annotations:
-    # github.com/project-slug: backstage/backstage
+  annotations:
+    jenkins.io/github-folder: folder-name/project-name
     # backstage.io/techdocs-ref: url:https://github.com/backstage/backstage
 spec:
   type: website

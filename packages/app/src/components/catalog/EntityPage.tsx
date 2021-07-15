@@ -50,6 +50,7 @@ import {
 } from '@backstage/plugin-org';
 import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
 import { EmptyState } from '@backstage/core-components';
+import { EntityJenkinsContent } from '@backstage/plugin-jenkins';
 
 const cicdContent = (
   // This is an example of how you can implement your company's logic in entity page.
@@ -100,6 +101,10 @@ const serviceEntityPage = (
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
       {cicdContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/jenkins" title="Jenkins">
+      <EntityJenkinsContent />
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/api" title="API">
